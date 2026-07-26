@@ -1,0 +1,104 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+
+<!-- Hero Section -->
+<div class="hero">
+    <div>
+        <h1>Welcome to Our Hospital</h1>
+        <p>We provide quality healthcare with experienced doctors and modern facilities.</p>
+        <a href="/booking/" class="btn btn-light btn-lg">Book an Appointment</a>
+    </div>
+</div>
+
+<!-- About Section -->
+<div class="row mb-5">
+    <div class="col-md-6">
+        <img src="{% static 'images/hos.jpg' %}" class="img-fluid rounded" alt="Hospital">
+    </div>
+
+    <div class="col-md-6">
+        <h2>About Our Hospital</h2>
+        <p>
+            Our hospital provides world-class medical services with experienced doctors,
+            advanced equipment, and compassionate patient care.
+        </p>
+
+        <ul>
+            <li>24 × 7 Emergency Service</li>
+            <li>Experienced Doctors</li>
+            <li>Modern Medical Equipment</li>
+            <li>Online Appointment Booking</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Services -->
+<h2 class="text-center mb-4">Our Services</h2>
+
+<div class="row">
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body text-center">
+                <h4>Cardiology</h4>
+                <p>Heart specialists with modern treatment facilities.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body text-center">
+                <h4>Neurology</h4>
+                <p>Advanced diagnosis and treatment for neurological disorders.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card shadow">
+            <div class="card-body text-center">
+                <h4>Orthopedics</h4>
+                <p>Expert care for bones, joints, muscles, and sports injuries.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- Why Choose Us -->
+<div class="bg-light p-5 rounded mt-5">
+    <h2 class="text-center">Why Choose Us?</h2>
+
+    <div class="row mt-4">
+
+        <div class="col-md-3 text-center">
+            <h1>👨‍⚕️</h1>
+            <h5>Qualified Doctors</h5>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <h1>🏥</h1>
+            <h5>Modern Facilities</h5>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <h1>🚑</h1>
+            <h5>24/7 Emergency</h5>
+        </div>
+
+        <div class="col-md-3 text-center">
+            <h1>❤️</h1>
+            <h5>Patient Care</h5>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}

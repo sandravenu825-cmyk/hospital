@@ -1,0 +1,70 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+Contact
+{% endblock %}
+
+{% block content %}
+
+<h2 class="text-center mb-5">Contact Us</h2>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<h4>Hospital Address</h4>
+
+<p>ABC Hospital</p>
+
+<p>Main Road</p>
+
+<p>Kochi, Kerala</p>
+
+<p>Phone : +91 9876543210</p>
+
+<p>Email : info@hospital.com</p>
+
+</div>
+
+<div class="col-md-6">
+
+<form>
+
+<div class="mb-3">
+
+<input type="text"
+class="form-control"
+placeholder="Your Name">
+
+</div>
+
+<div class="mb-3">
+
+<input type="email"
+class="form-control"
+placeholder="Email">
+
+</div>
+
+<div class="mb-3">
+
+<textarea class="form-control"
+rows="5"
+placeholder="Message"></textarea>
+
+</div>
+
+<button class="btn btn-primary">
+
+Send Message
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+{% endblock %}

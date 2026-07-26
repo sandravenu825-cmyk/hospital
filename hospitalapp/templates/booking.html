@@ -1,0 +1,109 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+Booking
+{% endblock %}
+
+{% block content %}
+
+<div class="row justify-content-center">
+
+<div class="col-md-8">
+
+<div class="card shadow">
+
+<div class="card-header bg-primary text-white">
+
+<h3>Book Appointment</h3>
+
+</div>
+
+<div class="card-body">
+
+<form method="POST">
+
+{% csrf_token %}
+
+<div class="mb-3">
+
+<label>Patient Name</label>
+
+<input type="text"
+name="patient_name"
+class="form-control"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label>Phone</label>
+
+<input type="text"
+name="patient_phone"
+class="form-control"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label>Email</label>
+
+<input type="email"
+name="patient_email"
+class="form-control"
+required>
+
+</div>
+
+<div class="mb-3">
+
+<label>Select Doctor</label>
+
+<select class="form-select"
+name="doctor">
+
+{% for d in doctor %}
+
+<option value="{{ d.id }}">
+
+{{ d.doctor_name }}
+
+</option>
+
+{% endfor %}
+
+</select>
+
+</div>
+
+<div class="mb-3">
+
+<label>Date</label>
+
+<input type="date"
+name="booking_date"
+class="form-control"
+required>
+
+</div>
+
+<button class="btn btn-primary w-100">
+
+Book Appointment
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+{% endblock %}
